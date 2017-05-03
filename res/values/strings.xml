@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LogTime</string>
+    <string name="version_number">Version 4</string>
+    <string name="project_name">Project 1</string>
+    <string name="activity_name">Activity 1</string>
+    <string name="button_del_log_m">लॅग काढा</string>
+    <string name="button_del_log_e">Del Log</string>
+    <string name="button_sh_log_m">लॅग दाखवा</string>
+    <string name="button_sh_log_e">Show Log</string>
+    <string name="button_end_task_m">कार्य अंत</string>
+    <string name="button_end_task_e">End event</string>
+    <string name="list_head_m">नॊंद कर्यॊ ईच्हीत कार्य निवडा</string>
+    <string name="list_head_e">Select event to log</string>
+    <string name="list_head_s2_m">नॊंद कॆलॆल्या वॆळा</string>
+    <string name="list_head_s2_e">Logged Events</string>
+    <string name="single_space">\u0020</string>
+</resources>

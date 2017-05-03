@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_only"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.indra.slyfox.logtime.OnlyActivity">
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:text="@string/button_sh_log_e"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:id="@+id/show_log"
+        android:onClick="populate_list"
+        android:layout_alignBottom="@id/center"
+        android:layout_toLeftOf="@id/center" />
+
+    <Button
+        android:text="@string/button_del_log_e"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_log"
+        android:onClick="delete_log"
+        android:layout_toRightOf="@id/center"
+        android:layout_alignBottom="@id/center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_end_task_e"
+        android:id="@+id/end_task"
+        android:onClick="write_end_rec"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/show_log"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:text="@string/list_head_e"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/project_names"
+        android:clickable="true"
+        android:layout_above="@id/end_task"
+        android:layout_below="@id/header"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>
